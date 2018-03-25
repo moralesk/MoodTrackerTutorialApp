@@ -20,15 +20,15 @@ public enum Moods: Int {
 public class MoodEntry {
 
     private var mood: Moods = .average
-    
+
     public init(mood: Moods) {
         self.mood = mood
     }
-    
+
     func changeMood(to mood: Moods) {
         self.mood = mood
     }
-    
+
     func getText() -> String {
         switch mood {
         case .worst: return .Mood_Worst
@@ -38,7 +38,7 @@ public class MoodEntry {
         case .best: return .Mood_Best
         }
     }
-    
+
     func getColor() -> UIColor {
         switch mood {
         case .worst: return .purple
