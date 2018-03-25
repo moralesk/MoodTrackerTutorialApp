@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-public var entries: [(String, UIColor)] = []
+public var entries: [MoodEntry] = []
 
 class MoodEntriesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -18,7 +18,7 @@ class MoodEntriesViewController: UIViewController, UITableViewDelegate, UITableV
     // MARK: Built-in Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "MY MOODS"
+        self.title = .Entries_Title
         tableView.delegate = self
         tableView.dataSource = self
         self.view.addSubview(tableView)
@@ -43,8 +43,8 @@ class MoodEntriesViewController: UIViewController, UITableViewDelegate, UITableV
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let entry = entries[indexPath.row]
         let cell = UITableViewCell()
-        cell.textLabel?.text = entry.0
-        cell.backgroundColor = entry.1
+        cell.textLabel?.text = entry.getText()
+        cell.backgroundColor = entry.getColor()
         return cell
     }
     

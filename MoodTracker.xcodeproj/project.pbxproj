@@ -14,6 +14,8 @@
 		C91A0324205CB4E800024773 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C91A0322205CB4E800024773 /* LaunchScreen.storyboard */; };
 		C91A032D205CB54100024773 /* MoodEntriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91A032C205CB54100024773 /* MoodEntriesViewController.swift */; };
 		C91A032F205CB5AE00024773 /* MoodEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91A032E205CB5AE00024773 /* MoodEntryViewController.swift */; };
+		C9C7122A2066B80000D646DD /* MoodEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C712292066B80000D646DD /* MoodEntry.swift */; };
+		C9C71231206723B400D646DD /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C71230206723B400D646DD /* StringExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		C91A0325205CB4E800024773 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C91A032C205CB54100024773 /* MoodEntriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodEntriesViewController.swift; sourceTree = "<group>"; };
 		C91A032E205CB5AE00024773 /* MoodEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodEntryViewController.swift; sourceTree = "<group>"; };
+		C9C712292066B80000D646DD /* MoodEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodEntry.swift; sourceTree = "<group>"; };
+		C9C71230206723B400D646DD /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 		C91A0318205CB4E800024773 /* MoodTracker */ = {
 			isa = PBXGroup;
 			children = (
+				C9C712282066B7E600D646DD /* Models */,
 				C91A032B205CB52300024773 /* ViewControllers */,
 				C91A0319205CB4E800024773 /* AppDelegate.swift */,
 				C91A031B205CB4E800024773 /* ViewController.swift */,
@@ -65,6 +70,7 @@
 				C91A0320205CB4E800024773 /* Assets.xcassets */,
 				C91A0322205CB4E800024773 /* LaunchScreen.storyboard */,
 				C91A0325205CB4E800024773 /* Info.plist */,
+				C9C71230206723B400D646DD /* StringExtension.swift */,
 			);
 			path = MoodTracker;
 			sourceTree = "<group>";
@@ -76,6 +82,14 @@
 				C91A032E205CB5AE00024773 /* MoodEntryViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C9C712282066B7E600D646DD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C9C712292066B80000D646DD /* MoodEntry.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +166,8 @@
 			files = (
 				C91A032F205CB5AE00024773 /* MoodEntryViewController.swift in Sources */,
 				C91A031C205CB4E800024773 /* ViewController.swift in Sources */,
+				C9C71231206723B400D646DD /* StringExtension.swift in Sources */,
+				C9C7122A2066B80000D646DD /* MoodEntry.swift in Sources */,
 				C91A032D205CB54100024773 /* MoodEntriesViewController.swift in Sources */,
 				C91A031A205CB4E800024773 /* AppDelegate.swift in Sources */,
 			);
